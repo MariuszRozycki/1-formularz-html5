@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 25vw;
+  min-height: 35vh;
+  border: 2px black solid;
+  padding: 20px;
+}
+
+label,
+input {
+  display: block;
+}
+
+input,
+select,
+textarea,
+input[type="checkbox"] {
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+label[for="gender"],
+input[type="checkbox"],
+input[name="gender"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+}

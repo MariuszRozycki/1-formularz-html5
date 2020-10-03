@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="https://formspree.io/f/xqkgavog" method="POST">
+
+      <label for="name">Imię:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="lname">Naswisko:</label>
+      <input type="text" name="lname" id="lname" required>
+
+      <label for="email">Podaj e-mail:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Numer telefonu:</label>
+      <input type="tel" name="phone" id="phone" required>
+
+      <label for="city-choice">Wybierz miasto:</label>
+      <select name="city-choice" id="city-choice" required>
+        <option value="Katowice">Katowice</option>
+        <option value="Warszawa">Warszawa</option>
+        <option value="Sosnowiec">Sosnowiec</option>
+        <option value="Krakow" selected>Kraków</option>
+        <option value="Wroclaw">Wrocław</option>
+        <option value="Gdansk">Gdańsk</option>
+      </select>
+
+      <label for="gender-man"><input type="radio" name="gender" id="gender-man">Mężczyzna</label>
+
+      <label for="gender-woman"><input type="radio" name="gender" id="gender-woman">Kobieta</label>
+
+
+      <label><input type="checkbox" name="agreement" required>Wyrażam zgodę na przetwarzanie danych osobowych</label>
+
+      <label for="message"></label>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Napisz wiadomość"></textarea>
+
+      <input type="submit" value="Wyślij wiadomość">
+    </form>
+  </div>
+</body>
+
+</html>
